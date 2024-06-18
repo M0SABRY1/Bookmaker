@@ -1,0 +1,14 @@
+.head-font{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 3.125rem;
+}
+
+.project-form{
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black;
+}
+
+#addBtn{
+    padding:6px 48px;
+}

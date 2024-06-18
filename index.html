@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookmarker</title>
+  </head>
+  <body class="bg-body-secondary">
+    <div class="container py-4">
+      <h1 class="head-font text-center">Bookmarker</h1>
+      <div class="project-form text-center mt-5 py-3">
+        <h2>Bookmark your favorite sites</h2>
+        <div class="form-group my-4">
+          <label for="siteName" class="fw-bold text-start d-block mb-2">
+            <i class="fa-solid fa-book-bookmark"></i>
+            Site Name
+          </label>
+          <input
+            type="text"
+            placeholder="Bookmark Name"
+            class="form-control"
+            id="siteName"
+          />
+        </div>
+        <div class="form-group my-4">
+          <label for="siteUrl" class="fw-bold text-start d-block mb-2">
+            <i class="fa-solid fa-link"></i>
+            Site URL
+          </label>
+          <input
+            type="text"
+            placeholder="Website URL"
+            class="form-control"
+            id="siteUrl"
+          />
+        </div>
+        <button id="addBtn" disabled class="btn btn-outline-primary" onclick="addBookmark()">
+          Submit
+        </button>
+      </div>
+
+      <input
+        type="search"
+        class="form-control w-75 my-3 mx-auto"
+        placeholder="Search by Bookmark Name"
+        oninput="searchForBookmark(this.value)"
+      />
+
+      <div class="output">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th>Num</th>
+              <th>Name</th>
+              <th>Visit</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
